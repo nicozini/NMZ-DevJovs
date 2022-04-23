@@ -1,0 +1,6 @@
+Tecnologias:
+
+- Mongo
+- Express
+- Node.js
+- Handlebars

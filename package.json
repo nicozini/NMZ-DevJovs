@@ -1,0 +1,46 @@
+{
+  "name": "devjobs",
+  "version": "1.0.0",
+  "description": "Portal DevJovs con NodeJs, Handlebars y MongoDB, Mongoose",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./index",
+    "start": "concurrently \"npm run dev\" \"npm run watch\" ",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack -w --mode development"
+  },
+  "author": "Nicolas Martin Zini",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^7.0.0",
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^4.6.0",
+    "connect-multiparty": "^2.2.0",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "express-handlebars": "^6.0.3",
+    "express-session": "^1.17.2",
+    "express-validator": "^6.14.0",
+    "http-errors": "^2.0.0",
+    "mongoose": "^6.2.7",
+    "multer": "^1.4.4",
+    "nodemailer": "^6.7.3",
+    "nodemailer-express-handlebars": "^5.0.0",
+    "passport": "^0.5.2",
+    "passport-local": "^1.0.0",
+    "shortid": "^2.2.16",
+    "slug": "^5.3.0",
+    "sweetalert2": "^11.4.8"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.8",
+    "@babel/preset-env": "^7.16.11",
+    "babel-loader": "^8.2.4",
+    "nodemon": "^2.0.15",
+    "webpack": "^5.70.0",
+    "webpack-cli": "^4.9.2"
+  }
+}

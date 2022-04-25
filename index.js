@@ -87,7 +87,8 @@ app.use((error, req, res, next) => {
 // });
 
 // Para Heroku lo puedo configurar:
-const host = 'localhost' || '186.12.186.71';
+// const host = 'localhost' || '186.12.186.71';
+const host = '0.0.0.0';
 const port = process.env.PORT || 5000;
 
 app.listen(port, host, () => {

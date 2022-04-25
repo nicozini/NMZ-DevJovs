@@ -81,7 +81,15 @@ app.use((error, req, res, next) => {
 
 
 // Servidor
+// const port = process.env.PORT || 5000;
+// app.listen(port, () => {
+//     `App listening on port ${port}`
+// });
+
+// Para Heroku lo puedo configurar:
+const host = 'localhost' || '186.12.186.71';
 const port = process.env.PORT || 5000;
-app.listen(port, () => {
-    `App listening on port ${port}`
+
+app.listen(port, host, () => {
+    console.log(`App listening on port ${port} from HEROKU`);
 });
